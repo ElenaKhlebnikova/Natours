@@ -1,12 +1,11 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
+
   margin: 0 auto;
 
   @include clearfix;
 
   [class^="col-"] {
-    background-color: aqua;
     float: left;
     margin-bottom: $gutter-vertical;
 
