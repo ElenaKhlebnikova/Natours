@@ -49,6 +49,16 @@
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+
+  &--green {
+    text-decoration: none;
+    color: $color-white;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary-dark
+    );
+  }
 }
 
 .btn-text {
