@@ -175,7 +175,7 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     margin-bottom: 4rem;
     height: auto;
     border-radius: 3px;
@@ -186,6 +186,8 @@
       font-size: 2rem;
       position: relative;
       box-shadow: none;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
       &--back {
         transform: rotateY(0deg);
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
